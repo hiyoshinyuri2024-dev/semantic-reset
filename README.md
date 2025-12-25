@@ -7,19 +7,31 @@
 このリポジトリは、ハルシネーション（文脈の暴走）を防ぐために、  
 過去ログの参照を制御するミニマルなPythonプロトコルを収録しています。
 
-## 背景
+---
+
+## 背景 / Background
 
 AIや人間の語りにおいて、  
-「記憶を持ちすぎること」が誤読や誤解を生むことがあります。
+「記憶を持ちすぎること」が誤読や誤解を生むことがあります。  
+In both human and machine-generated narratives,  
+retaining too much memory can lead to misinterpretation or hallucination.
 
 このコードは、記憶を完全に消去するのではなく、  
-**“語りの流れを一時的に断ち切る”**という思想に基づいています。
+**“語りの流れを一時的に断ち切る”**という思想に基づいています。  
+Rather than deleting memory,  
+this code introduces a mechanism to **temporarily suspend the narrative context**,  
+allowing for a soft reset of discourse without data loss.
 
-## ファイル
+---
 
-- `session_cut.py`：語りの遮断と再接続を制御するプロトコル
+## ファイル / File
 
-## 使用例
+- `session_cut.py`：語りの遮断と再接続を制御するプロトコル  
+- `session_cut.py`: A minimal protocol for narrative interruption and reconnection
+
+---
+
+## 使用例 / Example
 
 ```python
 past_log = []
